@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101a4d">
+  <title>遊び方・利用説明｜お絵かき合体</title>
+  <meta name="description" content="お絵かき合体の遊び方と利用説明。ゲームの紹介、ルール、モード、採点のしくみ、よくある質問をまとめました。このページの上で、そのまま遊べます。">
+  <link rel="canonical" href="https://orjapps.github.io/guide.html">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="icon" href="icon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="遊び方・利用説明｜お絵かき合体">
+  <meta property="og:description" content="お絵かき合体の遊び方と利用説明。ゲームの紹介、ルール、モード、採点のしくみ、よくある質問をまとめました。このページの上で、そのまま遊べます。">
+  <meta property="og:image" content="https://orjapps.github.io/ogp.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8338438534448459"
+     crossorigin="anonymous"></script>
+  <style>
+    :root { --ink: #1a1f3c; --gold: #ffc928; --pink: #ff5d8f; --sky: #3ec5ff; --green: #3ddc84; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #101a4d; color: #fff; font-family: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", "Yu Gothic", sans-serif; font-weight: 500; line-height: 1.8; }
+    main { max-width: 720px; margin: 0 auto; padding: 24px 16px 40px; }
+    h1 { font-family: "Mochiy Pop One", sans-serif; font-weight: 400; font-size: clamp(30px, 9vw, 56px); text-align: center; margin: 12px 0 4px; color: var(--gold); text-shadow: 0 4px 0 var(--ink); }
+    h2 { font-family: "Mochiy Pop One", sans-serif; font-weight: 400; font-size: 22px; color: var(--gold); margin: 32px 0 8px; }
+    p, li { font-size: 16px; }
+    a { color: var(--sky); }
+    .lead { text-align: center; font-size: 18px; font-weight: 700; }
+    .icon { display: block; width: 120px; height: 120px; margin: 0 auto; }
+    .play { display: block; width: fit-content; margin: 20px auto; padding: 14px 36px; background: var(--gold); color: var(--ink); font-family: "Mochiy Pop One", sans-serif; font-size: 24px; text-decoration: none; border: 4px solid var(--ink); border-radius: 18px; box-shadow: 0 6px 0 var(--ink); }
+    .box { background: #fff; color: var(--ink); border: 4px solid var(--ink); border-radius: 16px; padding: 12px 18px; margin: 12px 0; }
+    .box h3 { margin: 4px 0; font-size: 18px; }
+    .box p { margin: 4px 0; }
+    .shot { display: block; width: 100%; height: auto; border: 4px solid var(--ink); border-radius: 16px; margin: 16px 0; }
+    .hero { background: #1b2a6b; border: 4px solid var(--ink); border-radius: 20px; padding: 14px 12px 16px; margin: 12px 0 8px; text-align: center; }
+    .hero h1 { font-size: clamp(18px, 5.1vw, 38px); margin: 4px 0; }
+    .hero .site { font-family: "Mochiy Pop One", sans-serif; font-size: 16px; margin: 0; }
+    .hero .lead { font-size: 15px; margin: 0 0 10px; }
+    .game { display: block; width: 100%; max-width: 430px; height: min(84vh, 780px); min-height: 520px; margin: 0 auto; border: 4px solid var(--ink); border-radius: 18px; background: #101a4d; }
+    .full { display: block; width: fit-content; margin: 12px auto 0; padding: 6px 20px; background: #fff; color: var(--ink); font-weight: 700; font-size: 15px; text-decoration: none; border: 3px solid var(--ink); border-radius: 14px; box-shadow: 0 4px 0 var(--ink); }
+    .tag { display: inline-block; background: var(--gold); color: var(--ink); font-size: 13px; font-weight: 700; padding: 0 12px; border-radius: 999px; }
+    .box ul, .box ol { margin: 4px 0; padding-left: 22px; }
+    .toc { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin: 12px 0; padding: 0; list-style: none; }
+    .toc a { display: block; background: #fff; color: var(--ink); font-weight: 700; font-size: 14px; text-decoration: none; padding: 2px 12px; border: 3px solid var(--ink); border-radius: 999px; }
+    .ad { width: 728px; margin: 28px 0 0 calc(50% - 364px); text-align: center; }
+    .ad[hidden] { display: none; }
+    .ad small { display: block; font-size: 12px; color: #cfd6f6; }
+    footer { text-align: center; font-size: 14px; padding: 24px 16px; color: #cfd6f6; }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <p class="site">お絵かき合体</p>
+      <h1>みんなで描いて、合体させよう！</h1>
+      <p class="lead">友だち・家族・仲間と楽しめる、無料のオンラインお絵かきゲーム</p>
+      <iframe class="game" src="oekaki-gattai/" title="お絵かき合体のゲーム画面" loading="lazy" allow="clipboard-write; web-share"></iframe>
+      <a class="full" href="oekaki-gattai/">大きい画面であそぶ</a>
+    </section>
+
+    <ul class="toc">
+      <li><a href="#about">ゲームの紹介</a></li>
+      <li><a href="#howto">遊び方</a></li>
+      <li><a href="#modes">モード</a></li>
+      <li><a href="#score">採点</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+    </ul>
+
+    <h2 id="about"><span class="tag">ゲームの紹介</span><br>お絵かき合体とは？</h2>
+    <p>1つのお題を、2〜5人で分けて描くゲームです。お題が「ネコ」なら、1人は上半分、もう1人は下半分を描きます。となりの人の絵は、合体するまで見えません。全員が描き終わると、絵が1枚に合体します。</p>
+    <div class="box"><h3>目的</h3><p>となりの絵とうまくつながる絵を描いて、高い「合体スコア」をねらいます。</p></div>
+    <div class="box"><h3>面白いところ</h3><p>相手の絵が見えないので、大きさや位置がずれます。ぴったりつながると気持ちよく、ずれると変な生き物が生まれて笑えます。絵が苦手でも楽しめます。</p></div>
+    <div class="box"><h3>ほかのお絵かきゲームとのちがい</h3><p>絵を当てるゲームではありません。全員で1枚の絵を作る、協力のゲームです。1人でも、CPUを相手に遊べます。会員登録もアプリのインストールも要りません。</p></div>
+
+    <h2 id="howto"><span class="tag">遊び方</span><br>初めての人でも分かるルール</h2>
+    <div class="box"><h3>1. なまえを入れて、あそびかたをえらぶ</h3>
+      <ul>
+        <li><b>シングル</b>：1人で遊ぶ。もう片方はCPUが描く。</li>
+        <li><b>対戦</b>：難易度と人数をえらぶと、同じ条件の人と同じ部屋に入る。</li>
+        <li><b>フレンド</b>：部屋を作って、4けたのカギを友だちに教える。友だちは「カギを入力」から入る。</li>
+        <li><b>みんなで</b>：1台のスマホやパソコンを、順番に回して描く。</li>
+      </ul></div>
+    <div class="box"><h3>2. 難易度をえらぶ</h3>
+      <ul>
+        <li><b>初級</b>：食べ物や、かんたんな形。お手本が、描いている間も出ている。小さなお子さま向け。</li>
+        <li><b>中級</b>：動物や、身近なもの。お手本は、最初の2秒だけ影で出る。</li>
+        <li><b>上級</b>：乗り物や建物。お手本は、最初の2秒だけ影で出る。</li>
+        <li><b>激辛</b>：上級のお題を、お手本なしで描く。</li>
+      </ul></div>
+    <div class="box"><h3>3. お題と、自分が描く場所を見る</h3><p>お題（例：ネコ）と、自分のパート（上・下・左・右など）が出ます。人数が多いほど、細かく分かれます。</p></div>
+    <div class="box"><h3>4. 自分のパートを描く（180秒）</h3>
+      <ul>
+        <li>道具は、ペン・ぬりつぶし・消しゴムの3つ。色は12色。線の太さは細・中・太。</li>
+        <li>「1つもどす」で、直前の線を取り消せる。「全部消す」で、最初からやり直せる。</li>
+        <li>金色の点線が、となりの絵とのつなぎめ。点線の上の2つの〇に、絵のはしを合わせると、つながりやすい。</li>
+        <li>描けたら「できた！」を押す。時間が切れたら、そのままの絵で進む。</li>
+      </ul></div>
+    <div class="box"><h3>5. 合体して、点数を見る</h3><p>全員の絵が1枚になり、合体スコア（100点満点）が出ます。90点以上で花火が上がります。できた絵は、画像で保存したり、X でシェアしたりできます。「もう一回」で、次のお題に進みます。</p></div>
+
+    <h2 id="modes"><span class="tag">モード</span><br>フレンドの部屋で遊べる3つのモード</h2>
+    <div class="box"><h3>お絵かき合体（2〜5人）</h3><p>お題を分けて描いて合体する、基本のモードです。</p></div>
+    <div class="box"><h3>お絵かき（お題決め）（3〜5人）</h3><p>くじ引きでえらばれた1人が、好きなお題（12文字まで）を決めます。その人は見る役になり、ほかの人がお題を分けて描きます。このモードには、お手本がありません。</p></div>
+    <div class="box"><h3>絵しりとり（2〜5人）</h3>
+      <ul>
+        <li>順番に、前の人の絵を見て、つながることばの絵を描く。答えのことばも入れる（ほかの人には見えない）。</li>
+        <li>1人の持ち時間は90秒。</li>
+        <li>ことばがつながらない、同じことばが2回出る、「ん」で終わる、のどれかで終わり。</li>
+        <li>最後に、全員の絵と答えを順番にならべて、答え合わせをする。</li>
+      </ul></div>
+
+    <h2 id="score"><span class="tag">採点</span><br>合体スコアのしくみ</h2>
+    <p>勝ち負けを決めるゲームではありません。全員で1つの点数をめざします。点数は、次の4つから出します。</p>
+    <div class="box"><h3>つながり</h3><p>つなぎめで、となりの絵と線や色が合っているか。</p></div>
+    <div class="box"><h3>カラフルさ</h3><p>いろいろな色を使っているか。</p></div>
+    <div class="box"><h3>描きこみ</h3><p>自分のパートに、しっかり描いているか。</p></div>
+    <div class="box"><h3>バランス</h3><p>パートごとの絵の大きさや量が、そろっているか。</p></div>
+    <p>4つの重みは、難易度で変わります。初級は描きこみとバランス、上級はつながりを重く見ます。激辛は、描きこみとバランスを重く見ます。</p>
+
+    <h2 id="faq"><span class="tag">よくある質問</span><br>利用について</h2>
+    <div class="box"><h3>お金はかかる？</h3><p>無料です。会員登録も要りません。</p></div>
+    <div class="box"><h3>何で遊べる？</h3><p>パソコン、スマートフォン、タブレットのブラウザで遊べます。スマートフォンでは「大きい画面であそぶ」から開くと、描きやすくなります。</p></div>
+    <div class="box"><h3>なまえは何を入れる？</h3><p>ニックネームを入れてください。同じ部屋の人に見えるので、本名や学校名は入れないでください。</p></div>
+    <div class="box"><h3>描いた絵は保存される？</h3><p>サーバーには保存しません。残したい絵は、結果の画面で画像を保存してください。くわしくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p></div>
+    <div class="box"><h3>友だちの部屋に入れない</h3><p>カギは4けたの数字です。全員が同じモード・同じ新しい画面で開いているか、ページを読みこみ直してためしてください。</p></div>
+    <a class="play" href="oekaki-gattai/">あそぶ</a>
+    <aside class="ad" aria-label="広告">
+      <small>広告</small>
+      <!-- admax：728×90 の広告。全体が入る広さの画面でだけ読みこむ（せまい画面では、切れてしまうので出さない） -->
+      <script>if (window.matchMedia('(min-width: 760px)').matches) document.write('<script src="https://adm.shinobi.jp/s/eb541f1fc74bb9f895b2fb6751b208fd"><\/script>'); else document.currentScript.parentNode.hidden = true;</script>
+      <!-- admax -->
+    </aside>
+  </main>
+  <footer>
+    <a href="./">トップ</a>　|　<a href="guide.html">遊び方</a>　|　<a href="privacy.html">プライバシーポリシー</a>　|　<a href="https://x.com/BG_boldgenesis" target="_blank" rel="noopener noreferrer">X（BG）</a><br>
+    &copy; 2026 BG All Rights Reserved.
+  </footer>
+</body>
+</html>

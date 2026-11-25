@@ -37,6 +37,19 @@
     .box h3 { margin: 4px 0; font-size: 18px; }
     .box p { margin: 4px 0; }
     .shot { display: block; width: 100%; height: auto; border: 4px solid var(--ink); border-radius: 16px; margin: 16px 0; }
+    .hero { background: #1b2a6b; border: 4px solid var(--ink); border-radius: 20px; padding: 14px 12px 16px; margin: 12px 0 8px; text-align: center; }
+    .hero h1 { font-size: clamp(18px, 5.1vw, 38px); margin: 4px 0; }
+    .hero .site { font-family: "Mochiy Pop One", sans-serif; font-size: 16px; margin: 0; }
+    .hero .lead { font-size: 15px; margin: 0 0 10px; }
+    .game { display: block; width: 100%; max-width: 430px; height: min(84vh, 780px); min-height: 520px; margin: 0 auto; border: 4px solid var(--ink); border-radius: 18px; background: #101a4d; }
+    .full { display: block; width: fit-content; margin: 12px auto 0; padding: 6px 20px; background: #fff; color: var(--ink); font-weight: 700; font-size: 15px; text-decoration: none; border: 3px solid var(--ink); border-radius: 14px; box-shadow: 0 4px 0 var(--ink); }
+    .tag { display: inline-block; background: var(--gold); color: var(--ink); font-size: 13px; font-weight: 700; padding: 0 12px; border-radius: 999px; }
+    .box ul, .box ol { margin: 4px 0; padding-left: 22px; }
+    .toc { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin: 12px 0; padding: 0; list-style: none; }
+    .toc a { display: block; background: #fff; color: var(--ink); font-weight: 700; font-size: 14px; text-decoration: none; padding: 2px 12px; border: 3px solid var(--ink); border-radius: 999px; }
+    .ad { width: 728px; margin: 28px 0 0 calc(50% - 364px); text-align: center; }
+    .ad[hidden] { display: none; }
+    .ad small { display: block; font-size: 12px; color: #cfd6f6; }
     footer { text-align: center; font-size: 14px; padding: 24px 16px; color: #cfd6f6; }
   </style>
 </head>
@@ -62,12 +75,15 @@
       <li>Google が情報をどう使うかは、<a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener noreferrer">Google のポリシーと規約</a>をご覧ください。</li>
     </ul>
 
+    <p>このサイトは、広告配信サービス「忍者AdMax」（株式会社サムライファクトリー）も使います。忍者AdMax は、広告を出すために Cookie を使い、このサイトやほかのサイトへのアクセスの情報を集めることがあります。この情報から、個人が特定されることはありません。くわしい内容と、情報の利用を止める方法は、<a href="https://www.ninja.co.jp/privacy/" target="_blank" rel="noopener noreferrer">忍者ツールズのプライバシーポリシー</a>をご覧ください。</p>
+
     <h2>3. 外部のサービス</h2>
     <ul>
       <li><b>GitHub Pages</b>：このサイトを置いているサービスです。ページを開くと、アクセスの記録（IPアドレスなど）が GitHub に残ることがあります。</li>
       <li><b>Supabase</b>：部屋を作ることと、部屋の中の通信に使います。</li>
       <li><b>Google Fonts</b>：文字の形（フォント）を読みこむために使います。</li>
       <li><b>Google AdSense</b>：広告を出すために使います。</li>
+      <li><b>忍者AdMax</b>：広告を出すために使います。</li>
     </ul>
 
     <h2>4. お子さまの利用について</h2>
@@ -78,10 +94,10 @@
 
     <h2>6. お問い合わせ</h2>
     <p>X（旧 Twitter）の <a href="https://x.com/BG_boldgenesis" target="_blank" rel="noopener noreferrer">@BG_boldgenesis</a> まで、ご連絡ください。</p>
-    <p>制定日：2026年11月20日</p>
+    <p>制定日：2026年11月20日　／　改定日：2026年11月25日</p>
   </main>
   <footer>
-    <a href="./">トップ</a>　|　<a href="privacy.html">プライバシーポリシー</a>　|　<a href="https://x.com/BG_boldgenesis" target="_blank" rel="noopener noreferrer">X（BG）</a><br>
+    <a href="./">トップ</a>　|　<a href="guide.html">遊び方</a>　|　<a href="privacy.html">プライバシーポリシー</a>　|　<a href="https://x.com/BG_boldgenesis" target="_blank" rel="noopener noreferrer">X（BG）</a><br>
     &copy; 2026 BG All Rights Reserved.
   </footer>
 </body>
