@@ -47,7 +47,8 @@
     .box ul, .box ol { margin: 4px 0; padding-left: 22px; }
     .toc { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin: 12px 0; padding: 0; list-style: none; }
     .toc a { display: block; background: #fff; color: var(--ink); font-weight: 700; font-size: 14px; text-decoration: none; padding: 2px 12px; border: 3px solid var(--ink); border-radius: 999px; }
-    .ad { width: 728px; margin: 28px 0 0 calc(50% - 364px); text-align: center; }
+    .ad { margin: 28px 0 0 calc(50% - 50vw); width: 100vw; max-width: 100vw; overflow: hidden; text-align: center; }
+    .ad iframe { display: block; margin: 0 auto; border: 0; }
     .ad[hidden] { display: none; }
     .ad small { display: block; font-size: 12px; color: #cfd6f6; }
     footer { text-align: center; font-size: 14px; padding: 24px 16px; color: #cfd6f6; }
@@ -81,8 +82,8 @@
     <a class="play" href="oekaki-gattai/">あそぶ</a>
     <aside class="ad" aria-label="広告">
       <small>広告</small>
-      <!-- admax：728×90 の広告。全体が入る広さの画面でだけ読みこむ（せまい画面では、切れてしまうので出さない） -->
-      <script>if (window.matchMedia('(min-width: 760px)').matches) document.write('<script src="https://adm.shinobi.jp/s/eb541f1fc74bb9f895b2fb6751b208fd"><\/script>'); else document.currentScript.parentNode.hidden = true;</script>
+      <!-- admax：パソコンでは 728×90、スマホでは 320×50 と画面の下の広告を、忍者AdMax が自動で出し分ける -->
+      <script src="https://adm.shinobi.jp/o/3b95051784ae31fcb29274f0d65d14fb"></script>
       <!-- admax -->
     </aside>
   </main>
